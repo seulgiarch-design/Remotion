@@ -14,7 +14,7 @@ export const RemotionRoot: React.FC = () => {
         component={HelloWorld}
         durationInFrames={150}
         fps={30}
-        width={1920}
+        width={1080}
         height={1080}
         // You can override these props for each render:
         // https://www.remotion.dev/docs/parametrized-rendering
@@ -33,7 +33,7 @@ export const RemotionRoot: React.FC = () => {
         component={Logo}
         durationInFrames={150}
         fps={30}
-        width={1920}
+        width={1080}
         height={1080}
         schema={myCompSchema2}
         defaultProps={{
