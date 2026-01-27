@@ -1,6 +1,7 @@
 import { Composition } from "remotion";
 import { HelloWorld, myCompSchema } from "./HelloWorld";
 import { Logo, myCompSchema2 } from "./HelloWorld/Logo";
+import { NavanIntro, navanIntroSchema } from "./NavanIntro";
 
 // Each <Composition> is an entry in the sidebar!
 
@@ -39,6 +40,21 @@ export const RemotionRoot: React.FC = () => {
         defaultProps={{
           logoColor1: "#91dAE2" as const,
           logoColor2: "#86A8E7" as const,
+        }}
+      />
+
+      {/* Navan Intro Video */}
+      <Composition
+        id="NavanIntro"
+        component={NavanIntro}
+        durationInFrames={180}
+        fps={30}
+        width={1920}
+        height={1080}
+        schema={navanIntroSchema}
+        defaultProps={{
+          primaryColor: "#0052FF",
+          tagline: "The #1 Corporate Travel & Expense Platform",
         }}
       />
     </>
